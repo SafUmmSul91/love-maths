@@ -42,9 +42,9 @@ function runGame(gameType) {
         displayAdditionQuestion(num1, num2);
     } else if (gameType === "multiply") {
         displayMultiplyQuestion(num1, num2);
-    } else if (gameType === "subtract" ) {
+    } else if (gameType === "subtract") {
         displaySubtractQuestion(num1, num2);
-    } else if (gameType === "division") { 
+    } else if (gameType === "division") { // Correcting the condition for division
         displayDivisionQuestion(num1 * num2, num2); // Ensuring first number is greater
     } else {
         alert(`Unknown game type: ${gameType}`);
